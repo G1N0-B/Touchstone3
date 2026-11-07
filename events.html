@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops and Events | Riverbend Yoga Studio</title>
+  <meta name="description" content="Join a monthly workshop or ask us a question.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&amp;family=Quicksand:wght@500;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Workshops and Events</h1>
+    <p>Join a monthly workshop or ask us a question.</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Classes and Pricing</a></li>
+        <li><a href="about.html">About Our Studio</a></li>
+        <li><a href="events.html" aria-current="page">Workshops and Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="workshops-heading">
+      <h2 id="workshops-heading">Monthly Workshops</h2>
+      <p>Join a small-group workshop to go deeper into your practice. All levels are welcome.</p>
+      <ul>
+        <li><strong>First Saturday:</strong> Breathing and Stress Relief for Busy Professionals</li>
+        <li><strong>Second Saturday:</strong> Gentle Yoga for Healthy Joints</li>
+        <li><strong>Third Sunday:</strong> Restorative Evening of Rest</li>
+        <li><strong>Last Saturday:</strong> Beginner Basics and Questions</li>
+      </ul>
+      <figure>
+        <img src="yoga-workshop.jpg" width="1200" height="737" alt="Smiling group of adults of different ages sitting cross-legged on mats in a bright studio, facing an instructor during a seated meditation">
+        <figcaption>Our monthly workshops are friendly, small-group sessions where students of every age and experience level practice together.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="request-heading" id="request-form">
+      <h2 id="request-heading">Request a Spot</h2>
+      <p>Tell us what interests you and we will reply with details. Fields marked with an asterisk (*) are required.</p>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Your Contact Information</legend>
+          <p>
+            <label for="name">Full name *</label><br>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="80" autocomplete="name">
+          </p>
+          <p>
+            <label for="email">Email address *</label><br>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </p>
+          <p>
+            <label for="phone">Phone number (only if you prefer a call or text)</label><br>
+            <input type="tel" id="phone" name="phone" pattern="\+?[0-9\s\-]{7,20}" title="Enter 7 to 20 digits. You may use spaces, dashes, or a leading plus sign." autocomplete="tel">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Yoga Interests</legend>
+          <p>
+            <label for="interest">Class or event interest *</label><br>
+            <select id="interest" name="interest" required>
+              <option value="">Choose one</option>
+              <option value="gentle">Gentle Yoga</option>
+              <option value="vinyasa">Vinyasa Flow</option>
+              <option value="restorative">Restorative Yoga</option>
+              <option value="private">Private Session</option>
+              <option value="workshop">Monthly Workshop</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Experience level *</legend>
+            <p>
+              <input type="radio" id="level-beginner" name="level" value="beginner" required>
+              <label for="level-beginner">Beginner (new to yoga)</label>
+            </p>
+            <p>
+              <input type="radio" id="level-some" name="level" value="some">
+              <label for="level-some">Some experience</label>
+            </p>
+            <p>
+              <input type="radio" id="level-experienced" name="level" value="experienced">
+              <label for="level-experienced">Experienced</label>
+            </p>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>How Should We Reach You?</legend>
+          <p>
+            <label for="contact-method">Preferred contact method *</label><br>
+            <select id="contact-method" name="contact-method" required>
+              <option value="">Choose one</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone call</option>
+              <option value="text">Text message</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message *</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" required minlength="10" maxlength="500" placeholder="Tell us about your goals or any questions you have."></textarea>
+          </p>
+        </fieldset>
+
+        <p><button type="submit">Request a spot</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Riverbend Yoga Studio. All levels, all bodies, all welcome.</p>
+    <p>Questions? Visit our <a href="events.html#request-form">request form</a> and we will get back to you.</p>
+  </footer>
+</body>
+</html>
